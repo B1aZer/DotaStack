@@ -1,0 +1,12 @@
+@import "compass";
+@import "bootstrap/variables";
+
+body {
+    background: url(../images/bg.jpg) no-repeat center top fixed;
+}
+
+.wrapper {
+    background-color:rgba(0,0,0,0.2);
+    border: 1px solid $gray-darker;
+    padding: 15px;
+}
