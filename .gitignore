@@ -5,4 +5,5 @@
 .coverage
 .sass-cache
 local_settings.py
-/static
+/static/*
+!/static/media/

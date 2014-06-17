@@ -103,7 +103,7 @@ ALLOWED_HOSTS = []
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = 'Europe/Moscow'
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -115,6 +115,7 @@ LANGUAGE_CODE = "en"
 # Supported languages
 _ = lambda s: s
 LANGUAGES = (
+    ('ru', _('Russian')),
     ('en', _('English')),
 )
 
@@ -130,7 +131,7 @@ SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = False
+USE_I18N = True
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
@@ -334,6 +335,7 @@ OPTIONAL_APPS = (
 # }
 
 COMPRESS_PRECOMPILERS = (
+    ('text/less', 'lessc {infile} {outfile}'),
     ('text/x-sass', 'sass --compass "{infile}" "{outfile}"'),
     ('text/x-scss', 'sass --scss --compass "{infile}" "{outfile}"'),
 )
