@@ -24,6 +24,10 @@ footer {
 
 /* MEZZANINE FIXES */
 
+body {
+    padding-top: 15px;
+}
+
 .tree .active > a {
     background-color: $gray;
 }
