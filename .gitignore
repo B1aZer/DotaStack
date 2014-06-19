@@ -4,5 +4,6 @@
 .coverage
 .sass-cache
 local_settings.py
+/logs/
 /static/*
 !/static/media/
