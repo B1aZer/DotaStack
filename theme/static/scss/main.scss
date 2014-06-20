@@ -1,5 +1,8 @@
 @import "compass";
 @import "variables";
+img {
+    max-width: 100%;
+}
 
 body {
     background: url(../images/bg.jpg) no-repeat center top fixed;
