@@ -77,6 +77,8 @@ from __future__ import absolute_import, unicode_literals
 
 RICHTEXT_FILTERS = ()
 
+TINYMCE_SETUP_JS = 'theme/js/tinymce_setup.js'
+
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
