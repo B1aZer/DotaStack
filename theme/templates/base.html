@@ -18,7 +18,7 @@
 {% compress css %}
 <!--<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">-->
 <!--<link rel="stylesheet" href="{% static 'scss/bootstrap.scss' %}" media="screen, projection" type="text/x-scss" />-->
-<link rel="stylesheet" href="{% static 'less/bootstrap.less' %}" media="screen, projection" type="text/less" />
+<link rel="stylesheet" href="{% static 'theme/less/bootstrap.less' %}" media="screen, projection" type="text/less" />
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <!--<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">-->
 {% if LANGUAGE_BIDI %}
@@ -32,7 +32,7 @@
 {% endifinstalled %}
 {% block extra_css %}{% endblock %}
 <!-- THEME -->
-<link rel="stylesheet" href="{% static 'scss/main.scss' %}" media="screen, projection" type="text/x-scss" />
+<link rel="stylesheet" href="{% static 'theme/scss/main.scss' %}" media="screen, projection" type="text/x-scss" />
 <!-- ENDTHEME -->
 {% endcompress %}
 
