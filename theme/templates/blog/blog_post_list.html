@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
+{% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags theme_tags %}
 
 {% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
 
@@ -109,7 +109,7 @@
 
 {% block blog_post_list_post_content %}
 {% editable blog_post.content %}
-{{ blog_post.description_from_content|safe }}
+{{ blog_post|description_from_content|safe }}
 {% endeditable %}
 {% endblock %}
 
