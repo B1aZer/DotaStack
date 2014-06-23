@@ -15,7 +15,7 @@ from __future__ import absolute_import, unicode_literals
 # SHOP_CATEGORY_USE_FEATURED_IMAGE = True
 
 # Set an alternative OrderForm class for the checkout process.
-# SHOP_CHECKOUT_FORM_CLASS = 'cartridge.shop.forms.OrderForm'
+SHOP_CHECKOUT_FORM_CLASS = 'shopster.forms.CustomOrderForm'
 
 # If True, the checkout process is split into separate
 # billing/shipping and payment steps.
@@ -67,6 +67,8 @@ SHOP_CURRENCY_LOCALE = "ru_RU"
 # SHOP_OPTION_ADMIN_ORDER = (2, 1)
 
 SHOP_PAYMENT_STEP_ENABLED = False
+
+SHOP_USE_WISHLIST = False
 
 ######################
 # MEZZANINE SETTINGS #
@@ -325,6 +327,7 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
+    "shopster",
 )
 
 # List of processors used by RequestContext to populate the context.
