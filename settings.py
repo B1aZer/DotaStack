@@ -232,6 +232,7 @@ STATICFILES_FINDERS = (
 # a mode you'd pass directly to os.chmod.
 FILE_UPLOAD_PERMISSIONS = 0o644
 
+SEARCH_MODEL_CHOICES = ('pages.Page', 'blog.BlogPost', 'shop.Product')
 
 #############
 # DATABASES #
