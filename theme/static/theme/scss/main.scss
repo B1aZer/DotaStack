@@ -44,3 +44,8 @@ body {
     @include border-radius(5px)
 }
 
+.nav > li > a.dropdown-toggle:hover {
+    background-color: inherit;
+    border-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
