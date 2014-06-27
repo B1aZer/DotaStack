@@ -22,6 +22,8 @@ urlpatterns = i18n_patterns("",
 urlpatterns += patterns('',
 
     # Cartridge URLs.
+    ("^items/", "items.views.main"),
+
     ("^shop/", include("cartridge.shop.urls")),
     url("^account/orders/$", "cartridge.shop.views.order_history",
         name="shop_order_history"),
