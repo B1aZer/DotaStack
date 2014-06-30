@@ -40,7 +40,7 @@
 
                         // Register example button
                         ed.addButton('items', {
-                                title : 'items.desc',
+                                title : 'Insert Item',
                                 cmd : 'mceItems',
                                 image : url + '/locker.png'
                         });
