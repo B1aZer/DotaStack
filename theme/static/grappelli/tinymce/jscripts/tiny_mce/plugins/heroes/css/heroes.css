@@ -1,0 +1,13 @@
+.heroHoverSmall {
+    height: 20px;
+}
+
+.heroPickerIconLink {
+    text-decoration: none;
+}
+
+.heroColLeft, .heroColMiddle, .heroColRight {
+    float: left;
+    width: 33%;
+}
+

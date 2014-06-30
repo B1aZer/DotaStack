@@ -2,7 +2,7 @@
         // Load plugin specific language pack
         //tinymce.PluginManager.requireLangPack('example');
 
-        tinymce.create('tinymce.plugins.ItemsPlugin', {
+        tinymce.create('tinymce.plugins.HeroesPlugin', {
                 /**
                  * Initializes the plugin, this will be executed after the plugin has been created.
                  * This call is done before the editor instance has finished it's initialization so use the onInit event
@@ -14,7 +14,7 @@
                 init : function(ed, url) {
                         var self = this;
                         // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceExample');
-                        ed.addCommand('mcePasteItem', function(item) {
+                        ed.addCommand('mcePasteHero', function(item) {
                           if (!item.html) {
                             return;
                           }
@@ -24,11 +24,12 @@
 
                         });
 
-                        ed.addCommand('mceItems', function() {
+                        ed.addCommand('mceHeroes', function() {
                                 ed.windowManager.open({
-                                        file : url + '/items.htm',
-                                        width : 320 + ed.getLang('example.delta_width', 0),
-                                        height : 120 + ed.getLang('example.delta_height', 0),
+                                        file : url + '/heroes.htm',
+                                        popup_css : url + '/css/heroes.css',
+                                        width : 550 + ed.getLang('example.delta_width', 0),
+                                        height : 220 + ed.getLang('example.delta_height', 0),
                                         inline : 1
                                 }, {
                                         plugin_url : url, // Plugin absolute URL
@@ -37,10 +38,10 @@
                         });
 
                         // Register example button
-                        ed.addButton('items', {
-                                title : 'Insert Item',
-                                cmd : 'mceItems',
-                                image : url + '/locker.png'
+                        ed.addButton('heroes', {
+                                title : 'Insert Hero',
+                                cmd : 'mceHeroes',
+                                image : url + '/hero.png'
                         });
 
                         // Add a node change handler, selects the button in the UI when a image is selected
@@ -71,16 +72,15 @@
                  */
                 getInfo : function() {
                         return {
-                                longname : 'Example plugin',
-                                author : 'Some author',
-                                authorurl : 'http://tinymce.moxiecode.com',
-                                infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/example',
+                                longname : 'Heroes plugin',
+                                author : 'Dmitry',
+                                authorurl : 'http://dbran.me/',
                                 version : "1.0"
                         };
                 }
         });
 
         // Register plugin
-        tinymce.PluginManager.add('items', tinymce.plugins.ItemsPlugin);
+        tinymce.PluginManager.add('heroes', tinymce.plugins.HeroesPlugin);
 })();
 
