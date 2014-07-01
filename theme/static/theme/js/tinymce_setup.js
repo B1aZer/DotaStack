@@ -23,6 +23,8 @@ jQuery(function($) {
         tinyMCE.init({
 
             // main settings
+            browser_spellcheck : true,
+            gecko_spellcheck: true,
             mode : "specific_textareas",
             editor_selector : "mceEditor",
             theme: "advanced",
