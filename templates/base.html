@@ -145,29 +145,37 @@
 
         <div class="row">
             <p class="site-info text-center">
-            {% trans "Powered by" %}
-            <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-            <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-            {% trans "and" %}
-            <a href="http://www.djangoproject.com">Django</a>
-            <span class="separator">|</span>
-            {% trans "Theme by" %} <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
-            {% ifinstalled mezzanine.mobile %}
-            <span class="separator">|</span>
-            <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-            {% endifinstalled %}
-            <span class="separator">|</span>
             <!--LiveInternet counter--><script type="text/javascript"><!--
             document.write("<a href='//www.liveinternet.ru/click' "+
-            "target=_blank><img src='//counter.yadro.ru/hit?t23.6;r"+
+            "target=_blank><img src='//counter.yadro.ru/hit?t22.6;r"+
             escape(document.referrer)+((typeof(screen)=="undefined")?"":
             ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
             screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
             ";"+Math.random()+
-            "' alt='' title='LiveInternet: number of visitors for today is"+
-            " shown' "+
-            "border='0' width='88' height='15'><\/a>")
+            "' alt='' title='LiveInternet: number of pageviews for 24 hours,"+
+            " of visitors for 24 hours and for today is shown' "+
+            "border='0' width='88' height='31'><\/a>")
             //--></script><!--/LiveInternet-->
+            <span class="separator">|</span>
+            <!-- Rating@Mail.ru counter -->
+            <script type="text/javascript">
+            var _tmr = _tmr || [];
+            _tmr.push({id: "2540817", type: "pageView", start: (new Date()).getTime()});
+            (function (d, w) {
+               var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+               ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+               var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+               if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+            })(document, window);
+            </script><noscript><div style="position:absolute;left:-10000px;">
+            <img src="//top-fwz1.mail.ru/counter?id=2540817;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+            </div></noscript>
+            <!-- //Rating@Mail.ru counter -->
+            <!-- Rating@Mail.ru logo -->
+            <a href="http://top.mail.ru/jump?from=2540817">
+            <img src="//top-fwz1.mail.ru/counter?id=2540817;t=283;l=1" 
+            style="border:0;" height="31" width="38" alt="Рейтинг@Mail.ru" /></a>
+            <!-- //Rating@Mail.ru logo -->
             <span class="separator">|</span>
             <!-- begin of Top100 code -->
 
