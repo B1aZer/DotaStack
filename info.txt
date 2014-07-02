@@ -1,3 +1,5 @@
+hero name with _ in tinymce plugin
+
 tiny mce debug is on 
 
 EE40847A1B21B53F751D01AAB7CFCB61
