@@ -156,6 +156,18 @@
             <span class="separator">|</span>
             <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
             {% endifinstalled %}
+            <span class="separator">|</span>
+            <!--LiveInternet counter--><script type="text/javascript"><!--
+            document.write("<a href='//www.liveinternet.ru/click' "+
+            "target=_blank><img src='//counter.yadro.ru/hit?t23.6;r"+
+            escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";"+Math.random()+
+            "' alt='' title='LiveInternet: number of visitors for today is"+
+            " shown' "+
+            "border='0' width='88' height='15'><\/a>")
+            //--></script><!--/LiveInternet-->
             </p>
         </div>
     </footer>
@@ -163,19 +175,6 @@
 
 {% include "includes/footer_scripts.html" %}
 <script type="text/javascript" src="{% static "theme/js/main.js" %}"></script>
-
-<!--LiveInternet counter--><script type="text/javascript"><!--
-document.write("<a href='//www.liveinternet.ru/click' "+
-"target=_blank><img src='//counter.yadro.ru/hit?t54.6;r"+
-escape(document.referrer)+((typeof(screen)=="undefined")?"":
-";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-";"+Math.random()+
-"' alt='' title='LiveInternet: number of pageviews and visitors"+
-" for 24 hours is shown' "+
-"border='0' width='88' height='31'><\/a>")
-//--></script><!--/LiveInternet-->
-
 
 </body>
 </html>
