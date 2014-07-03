@@ -19,3 +19,22 @@ def description_from_content(blogpost):
     if not blogpost.gen_description:
         description = blogpost.description
     return description
+
+import urllib
+from HTMLParser import HTMLParser
+class MyParse(HTMLParser):
+    def __init__(self):
+        HTMLParser.__init__(self)
+        self.src = ''
+    def handle_starttag(self, tag, attrs):
+        if tag=="img":
+            self.src = dict(attrs)["src"]
+
+@register.filter
+def get_image(content):
+    parser=MyParse()
+    parser.feed(content)
+    if not parser.src:
+        return ''
+    image_source = urllib.quote_plus(parser.src)
+    return image_source

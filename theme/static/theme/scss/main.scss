@@ -52,6 +52,10 @@ body {
 
 /* GOOGLE SHARE */
 
-.google-share div {
+.row .col-md-7.middle .google-share div {
     vertical-align: middle !important;
+}
+
+.row .col-md-7.middle .pinterest-share a {
+    vertical-align: middle!important;
 }
