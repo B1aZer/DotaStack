@@ -8,6 +8,7 @@ from mezzanine.blog.models import BlogPost, BlogCategory
 from mezzanine.generic.models import Keyword
 from mezzanine import template
 from mezzanine.utils.models import get_user_model
+from mezzanine.conf import settings
 
 User = get_user_model()
 
@@ -22,13 +23,23 @@ def description_from_content(blogpost):
 
 import urllib
 from HTMLParser import HTMLParser
+if not settings.MEDIA_URL:
+    raise Exception('Provide settings.MEDIA_URL')
+if not settings.ALLOWED_HOSTS:
+    raise Exception('Provide settings.ALLOWED_HOSTS')
+
 class MyParse(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
         self.src = ''
     def handle_starttag(self, tag, attrs):
+        image = ''
         if tag=="img":
-            self.src = dict(attrs)["src"]
+            image = dict(attrs)["src"]
+            if settings.MEDIA_URL in image:
+                image = 'http://' + settings.ALLOWED_HOSTS[0] + image
+            self.src = image
+
 
 @register.filter
 def get_image(content):
