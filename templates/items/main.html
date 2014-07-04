@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="{% static "items/css/items.css" %}">
 <script type="text/javascript" src="http://www.dota2.com/public/javascript/tooltips.js?v=1764963835&l=russian"></script>
 <script type="text/javascript" src="{% static "items/js/main.js" %}"></script>
-<script type="text/javascript" src="http://www.dota2.com/jsfeed/heropediadata?feeds=itemdata&v=22925911764963835&l=russian&callback=HeropediaDFReceive"></script>
+<script type="text/javascript" src="{% url 'items-get-list' %}"></script>
 {% endblock %}
 
 {% block base %}
