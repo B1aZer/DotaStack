@@ -1,8 +1,8 @@
 ========STATIC==============
+reload apache
 run collect static
-then compress 
+then compress
 on deploy
-reload apache after
 
 ========Images==============
 images - .magnific for lightbox
@@ -50,7 +50,7 @@ TI4 будет проходить с 18 июля по 21 июля в Сиэтл�
 
 hero name with _ in tinymce plugin
 
-tiny mce debug is on 
+tiny mce debug is on
 
 EE40847A1B21B53F751D01AAB7CFCB61
 
