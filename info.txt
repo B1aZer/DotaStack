@@ -1,8 +1,12 @@
+run collect static
+then compress 
+on deploy
+
 linkbuilding
 
 rss fedds
 FOTO hostings
-ggole + , twiiter
+google + , twiiter
 pinterest, imgur profile
 Hubpages
 reddit
@@ -11,6 +15,11 @@ forums, blogs
 
 http://www.screwattack.com/
 http://everywheremag.com/places/5604
+http://seostatya.ru/panelavtora/
+http://textbox.com.ua/12390
+
+6706154758157
+BRANITSKAYA
 
 
 Призовой фонд турнира TI4 по компьютерной игре Dota 2 перевалил за 10,000,000 $
