@@ -20,8 +20,9 @@
 {% endblock extra_css %}
 
 {% block extra_js %}
-{{ block.super }}
 <script src="{% static "mezzanine/js/magnific-popup.js" %}"></script>
+{% endblock %}
+{% block extra_head %}
 <script>
 $(document).ready(function() {
     $( ".magnific" ).wrap(function() {
