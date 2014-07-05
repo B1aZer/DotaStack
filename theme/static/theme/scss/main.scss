@@ -59,3 +59,10 @@ body {
 .row .col-md-7.middle .pinterest-share a {
     vertical-align: middle!important;
 }
+
+/* MAGNIFIC IMAGES LIGHTBOX */
+
+.magnific {
+    border: 4px solid #fff;
+    @include border-radius(4px)
+}

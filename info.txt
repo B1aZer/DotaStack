@@ -2,6 +2,8 @@ run collect static
 then compress 
 on deploy
 
+images - .magnific for lightbox
+
 linkbuilding
 
 rss fedds
