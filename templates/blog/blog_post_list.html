@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags theme_tags %}
+{% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags theme_tags staticfiles %}
 
 {% block meta_title %}{% if page %}{{ page.meta_title }} {% elif category %} {{ category }} {% else %} {% trans "Home" %}{% endif %}{% endblock %}
 
@@ -14,6 +14,26 @@
 {% block meta_description %}{% metablock %}
 {{ page.description }}
 {% endmetablock %}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "mezzanine/css/magnific-popup.css" %}">
+{% endblock extra_css %}
+
+{% block extra_js %}
+{{ block.super }}
+<script src="{% static "mezzanine/js/magnific-popup.js" %}"></script>
+<script>
+$(document).ready(function() {
+    $( ".magnific" ).wrap(function() {
+        return "<a class='magnific-link' href='" + $( this ).attr("src") + "'></a>";
+        });
+
+    $('.magnific-link').magnificPopup({
+        type: 'image',
+    });
+});
+</script>
+{% endblock %}
 
 {% block title %}
 {% if page %}
