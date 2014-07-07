@@ -12,7 +12,23 @@
 {% endmetablock %}{% endblock %}
 
 {% block meta_description %}{% metablock %}
-{{ page.description }}
+{% if page.description %}
+    {{ page.description }}
+{% elif tag or category or year or month or author %}
+    {% if tag %}
+        {% trans "Viewing posts tagged" %} {{ tag }}
+    {% else %}{% if category %}
+        {% trans "Viewing posts for the category" %} {{ category }}
+    {% else %}{% if year or month %}
+        {% trans "Viewing posts from" %} {% if month %}{{ month }}, {% endif %}
+        {{ year }}
+    {% else %}{% if author %}
+        {% trans "Viewing posts by" %}
+        {{ author.get_full_name|default:author.username }}
+    {% endif %}{% endif %}{% endif %}{% endif %}
+{% else %}
+{{ block.super }}
+{% endif %}
 {% endmetablock %}{% endblock %}
 
 {% block extra_css %}
@@ -96,7 +112,7 @@ $(document).ready(function() {
 {% block blog_post_list_post_title %}
 {% editable blog_post.title %}
 <h2>
-    <a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a>
+    <a href="{{ blog_post.get_absolute_url }}" class="blog-post-title">{{ blog_post.title }}</a>
 </h2>
 {% endeditable %}
 {% endblock %}
