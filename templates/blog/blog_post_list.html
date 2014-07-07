@@ -41,9 +41,9 @@
 {% block extra_head %}
 <script>
 $(document).ready(function() {
-    $( ".magnific" ).wrap(function() {
+    $(".magnific").wrap(function() {
         return "<a class='magnific-link' href='" + $( this ).attr("src") + "'></a>";
-        });
+    });
 
     $('.magnific-link').magnificPopup({
         type: 'image',
@@ -96,8 +96,7 @@ $(document).ready(function() {
     {% endif %}{% endif %}{% endif %}{% endif %}
     {% endblock %}
     </p>
-{% else %}
-    {% if page %}
+{% elif page %}
     {% block blog_post_list_pagecontent %}
     {% if page.get_content_model.content %}
         {% editable page.get_content_model.content %}
@@ -105,7 +104,10 @@ $(document).ready(function() {
         {% endeditable %}
     {% endif %}
     {% endblock %}
-    {% endif %}
+{% else %}
+    <p>
+        {% trans "Recent Posts" %}
+    </p>
 {% endif %}
 
 {% for blog_post in blog_posts.object_list %}
