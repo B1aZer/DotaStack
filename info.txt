@@ -1,3 +1,5 @@
+link ggoogle sites, gae, github
+
 ========STATIC==============
 reload apache
 run collect static
@@ -18,14 +20,38 @@ Hubpages
 reddit
 youtube videos  -  creative commons
 forums, blogs
+slideshare, scribd
+
 
 http://www.screwattack.com/
 http://everywheremag.com/places/5604
 http://seostatya.ru/panelavtora/
 http://textbox.com.ua/12390
 
+--- FORUMS ----
+http://pometki.borda.ru/?0-0-0
+http://forum.miramagia.com/
+http://forum.travian.jp/member.php?u=254355&s=61505f03c3ce1efd94c937401ce71d99&tab=aboutme
+http://www.love2d.org/forums/ucp.php
+http://www.bigbike-magazine.com/forum/profile.php?id=89302
+
+http://forum.51cube.com.ua/register.php?action=register
+http://forum.bspdev.com/profile.php?mode=editprofile
+http://androidteam.ru/forum/member.php?u=63911
+http://andrei1.ru/profile.php?do=editprofile
+http://genderdreaming.com/forum/members/wcdotakz.html
+
 6706154758157
 BRANITSKAYA
+
+
+http://otvet.mail.ru/question/168410608
+
+Бкб ничто не контрит, так как бкб сам контрит магический урон.
+Fresh meat - не способность. Flesh Heap - способность, но она не дает магической неуязвимости как у бкб, а лишь повышает силу и магический ресист (урон от заклинаний).
+
+Читайте http://dotafarm.com и будьте в курсе последних событий.
+
 
 
 ========Linkbuilding==============

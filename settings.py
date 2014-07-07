@@ -153,6 +153,7 @@ TINYMCE_SETUP_JS = 'theme/js/tinymce_setup.js'
 # INSTALLED_APPS setting.
 USE_SOUTH = True
 
+BLOG_POST_PER_PAGE = 8
 
 ########################
 # MAIN DJANGO SETTINGS #
