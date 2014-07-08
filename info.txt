@@ -3,6 +3,15 @@ collect
 compress
 reload
 
+======CHECK======
+dotaguid.ru - spam links
+https://dota2.net
+live-dota.ru
+
+=====DOTA BUILDS====
+http://refeal.do.am/
+http://warcraft-air.clan.su/
+
 ====TODO========
 items -> shop disabled style
 translate shop and other things
