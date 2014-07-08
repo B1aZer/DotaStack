@@ -33,6 +33,9 @@
 {% block extra_css %}{% endblock %}
 <!-- THEME -->
 <link rel="stylesheet" href="{% static 'theme/scss/main.scss' %}" media="screen, projection" type="text/x-scss" />
+<!-- ICONS -->
+<link rel="stylesheet" href="{% static "theme/lib/css/font-awesome.min.css" %}">
+<link rel="stylesheet" href="{% static "theme/lib/css/bootstrap-social.css" %}">
 <!-- ENDTHEME -->
 {% endcompress %}
 
@@ -95,6 +98,25 @@
 </div>
 {% endif %}
 {% endnevercache %}
+
+<div class="row">
+    <div class="col-md-12">
+
+        <p class="icons-panel-top pull-right">
+        <a class="btn btn-social-icon btn-pinterest" href="http://www.pinterest.com/dotaf/dota-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/" target="_blank">
+            <i class="fa fa-pinterest"></i>
+        </a>
+        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/dotafarmcom" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/102234147465882533492" target="_blank">
+            <i class="fa fa-google-plus"></i>
+        </a>
+        </p>
+
+    </div>
+</div>
+
 
 <ul class="breadcrumb">
 {% spaceless %}
