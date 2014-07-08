@@ -1,3 +1,9 @@
+#: META description
+
+#: base.html
+msgid "Entertainment community site for Dota 2 fans"
+msgstr "Развлекательный портал посвященный Dota 2"
+
 #: Page titles
 msgid "News"
 msgstr "Новости"
