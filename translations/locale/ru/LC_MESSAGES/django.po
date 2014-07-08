@@ -2,8 +2,20 @@
 msgid "News"
 msgstr "Новости"
 
-msgid "dsa"
+msgid "Items"
+msgstr "Предметы"
+
+msgid "Pictures"
+msgstr "Картинки"
+
+msgid "Video"
 msgstr "Видео"
+
+msgid "Shop"
+msgstr "Магазин"
+
+msgid "Community"
+msgstr "Сообщество"
 
 msgid "Figures"
 msgstr "Фигурки"
