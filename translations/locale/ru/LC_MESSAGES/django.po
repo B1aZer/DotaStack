@@ -19,3 +19,7 @@ msgstr "Сообщество"
 
 msgid "Figures"
 msgstr "Фигурки"
+
+#: Blog categories
+msgid "Tactics"
+msgstr "Тактика"
