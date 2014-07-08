@@ -302,6 +302,7 @@ ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
 # Don't forget to use absolute paths, not relative paths.
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
+LOCALE_PATHS = (os.path.join(PROJECT_ROOT, "translations/locale"),)
 
 ################
 # APPLICATIONS #
@@ -331,6 +332,7 @@ INSTALLED_APPS = (
     #"mezzanine.mobile",
     "shopster",
     "items",
+    "translations",
 )
 
 # List of processors used by RequestContext to populate the context.

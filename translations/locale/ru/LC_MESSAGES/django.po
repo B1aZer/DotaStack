@@ -1,0 +1,9 @@
+#: Page titles
+msgid "News"
+msgstr "Новости"
+
+msgid "dsa"
+msgstr "Видео"
+
+msgid "Figures"
+msgstr "Фигурки"
