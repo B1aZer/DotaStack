@@ -18,7 +18,7 @@
     {% if tag %}
         {% trans "Viewing posts tagged" %} {{ tag }}
     {% else %}{% if category %}
-        {% trans "Viewing posts for the category" %} {% trans category %}
+        {% trans "Viewing posts for the category" %} {% trans category.title %}
     {% else %}{% if year or month %}
         {% trans "Viewing posts from" %} {% if month %}{{ month }}, {% endif %}
         {{ year }}
@@ -67,7 +67,7 @@ $(document).ready(function() {
 {% if tag %}
     {% trans "Tag:" %} {{ tag }}
 {% else %}{% if category %}
-    {% trans "Category:" %} {% trans category %}
+    {% trans "Category:" %} {% trans category.title %}
 {% else %}{% if year or month %}
     {% if month %}{{ month }}, {% endif %}{{ year }}
 {% else %}{% if author %}
@@ -86,7 +86,7 @@ $(document).ready(function() {
     {% if tag %}
         {% trans "Viewing posts tagged" %} {{ tag }}
     {% else %}{% if category %}
-        {% trans "Viewing posts for the category" %} {% trans category %}
+        {% trans "Viewing posts for the category" %} {% trans category.title %}
     {% else %}{% if year or month %}
         {% trans "Viewing posts from" %} {% if month %}{{ month }}, {% endif %}
         {{ year }}
