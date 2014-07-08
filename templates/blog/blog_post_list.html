@@ -18,7 +18,7 @@
     {% if tag %}
         {% trans "Viewing posts tagged" %} {{ tag }}
     {% else %}{% if category %}
-        {% trans "Viewing posts for the category" %} {{ category }}
+        {% trans "Viewing posts for the category" %} {% trans category %}
     {% else %}{% if year or month %}
         {% trans "Viewing posts from" %} {% if month %}{{ month }}, {% endif %}
         {{ year }}
@@ -67,7 +67,7 @@ $(document).ready(function() {
 {% if tag %}
     {% trans "Tag:" %} {{ tag }}
 {% else %}{% if category %}
-    {% trans "Category:" %} {{ category }}
+    {% trans "Category:" %} {% trans category %}
 {% else %}{% if year or month %}
     {% if month %}{{ month }}, {% endif %}{{ year }}
 {% else %}{% if author %}
@@ -86,7 +86,7 @@ $(document).ready(function() {
     {% if tag %}
         {% trans "Viewing posts tagged" %} {{ tag }}
     {% else %}{% if category %}
-        {% trans "Viewing posts for the category" %} {{ category }}
+        {% trans "Viewing posts for the category" %} {% trans category %}
     {% else %}{% if year or month %}
         {% trans "Viewing posts from" %} {% if month %}{{ month }}, {% endif %}
         {{ year }}
@@ -129,7 +129,7 @@ $(document).ready(function() {
     {% if categories %}
     {% trans "in" %}
     {% for category in categories %}
-    <a href="{% url "blog_post_list_category" category.slug %}">{{ category }}</a>{% if not forloop.last %}, {% endif %}
+    <a href="{% url "blog_post_list_category" category.slug %}">{% trans category %}</a>{% if not forloop.last %}, {% endif %}
     {% endfor %}
     {% endif %}
     {% endwith %}
