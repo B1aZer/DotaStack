@@ -1,3 +1,7 @@
+====RUN========
+collect
+compress
+reload
 
 ====TODO========
 items -> shop disabled style
