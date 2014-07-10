@@ -3,6 +3,10 @@ collect
 compress
 reload
 
++=====translate====+
+http://www.polygon.com/2014/7/9/5884391/AAA-greed-competitive-MOBAs-DOTA2-LOL
+http://www.polygon.com/2014/7/10/5886589/dota-2-the-international-valve-day-one-team-liquid-cloud-9
+
 ======CHECK======
 dotaguid.ru - spam links
 https://dota2.net
@@ -16,6 +20,14 @@ http://warcraft-air.clan.su/
 items -> shop disabled style
 translate shop and other things
 
+
+www.dizzed.com
+http://www.givealink.org/
+
+http://esports.berkeley.edu/
+
+
+Dota 2 Community. Interesting reviews, funny pictures and latest videos.
 
 Сообщество любителей компьютерной игры Dota 2. Интересные статьи, забавные картинки и тактические статьи. Dota картинки.
 
