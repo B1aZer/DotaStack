@@ -27,7 +27,7 @@ msgid "Figures"
 msgstr "Фигурки"
 
 msgid "Dota Figures"
-msgstr "Dota Фигурки"
+msgstr "Дота Фигурки"
 
 msgid "Other Figures"
 msgstr "Другие Фигурки"
