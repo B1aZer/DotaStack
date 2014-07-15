@@ -32,6 +32,9 @@ msgstr "Дота Фигурки"
 msgid "Other Figures"
 msgstr "Другие Фигурки"
 
+msgid "Other Shirts"
+msgstr "Другие Майки"
+
 #: Blog categories
 msgid "Tactics"
 msgstr "Тактика"
