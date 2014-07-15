@@ -26,6 +26,15 @@ msgstr "Сообщество"
 msgid "Figures"
 msgstr "Фигурки"
 
+msgid "Shop / Dota Figures"
+msgstr "Магазин / Дота Фигурки"
+
+msgid "Shop / Other Figures"
+msgstr "Магазин / Другие Фигурки"
+
+msgid "Shop / Other Shirts"
+msgstr "Магазин / Другие Майки"
+
 msgid "Dota Figures"
 msgstr "Дота Фигурки"
 
