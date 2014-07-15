@@ -4,6 +4,7 @@ compress
 reload
 
 +=====translate====+
+http://dotametrics.wordpress.com/2014/05/07/one-weird-trick-to-raise-mmr-that-raijin-thunderkeg-doesnt-want-you-to-know-about/
 http://www.polygon.com/2014/7/9/5884391/AAA-greed-competitive-MOBAs-DOTA2-LOL
 http://www.polygon.com/2014/7/10/5886589/dota-2-the-international-valve-day-one-team-liquid-cloud-9
 
