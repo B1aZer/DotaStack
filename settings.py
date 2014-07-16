@@ -155,6 +155,8 @@ USE_SOUTH = True
 
 BLOG_POST_PER_PAGE = 8
 
+SLUGIFY = 'utils.translit_unicode'
+
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
