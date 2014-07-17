@@ -31,7 +31,7 @@
     {% trans "Posted by" %}:
     {% with blog_post.user as author %}
     <span itemscope itemtype="http://schema.org/Person">
-        <a href="{% url "blog_post_list_author" author %}" itemprop="url" rel="author">{{ author.get_full_name|default:author.username }}</a>
+        <a href="{% url "blog_post_list_author" author %}" itemprop="url" rel="author"><span itemprop="name">{{ author.get_full_name|default:author.username }}</span></a>
     </span>
     {% endwith %}
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
