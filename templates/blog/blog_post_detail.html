@@ -23,16 +23,21 @@
 
 {% block main %}
 
+<div itemscope itemType="http://schema.org/BlogPosting">
+
 {% block blog_post_detail_postedby %}
 {% editable blog_post.publish_date %}
-<h6 class="post-meta">
+<h6 class="post-meta" itemprop="author">
     {% trans "Posted by" %}:
     {% with blog_post.user as author %}
-    <a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>
+    <span itemscope itemtype="http://schema.org/Person">
+        <a href="{% url "blog_post_list_author" author %}" itemprop="url" rel="author">{{ author.get_full_name|default:author.username }}</a>
+    </span>
     {% endwith %}
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
 </h6>
 {% endeditable %}
+<h2 itemprop="headline" class="hidden">{{ blog_post.title }}</h2>
 {% endblock %}
 {% block blog_post_detail_commentlink %}
 <p>
@@ -61,9 +66,11 @@
 {% endif %}
 
 {% block blog_post_detail_content %}
+<div itemprop="articleBody">
 {% editable blog_post.content %}
 {{ blog_post.content|richtext_filters|safe }}
 {% endeditable %}
+</div>
 {% endblock %}
 
 {% block blog_post_detail_keywords %}
@@ -149,5 +156,7 @@
 {% block blog_post_detail_comments %}
 {% if blog_post.allow_comments %}{% comments_for blog_post %}{% endif %}
 {% endblock %}
+
+</div>
 
 {% endblock %}
