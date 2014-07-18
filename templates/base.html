@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %} itemscope itemtype="http://schema.org/Blog">
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %} itemscope itemtype="http://schema.org/WebPage">
 {% load pages_tags mezzanine_tags i18n future staticfiles %}
 
 <head>
@@ -125,7 +125,7 @@
 </div>
 
 
-<ul class="breadcrumb">
+<ul class="breadcrumb" itemprop="breadcrumb">
 {% spaceless %}
 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
 {% endspaceless %}
