@@ -1,5 +1,8 @@
 #: META description
 
+msgid "Dota Blog"
+msgstr "Dota Блог"
+
 #: base.html
 msgid "DotaFarm: Entertainment community site for Dota 2 fans"
 msgstr "DotaFarm: Развлекательный портал посвященный Dota 2"
