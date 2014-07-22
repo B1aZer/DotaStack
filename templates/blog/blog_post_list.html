@@ -28,10 +28,10 @@
         {% trans "Viewing posts by" %}
         {{ author.get_full_name|default:author.username }}
     {% endif %}{% endif %}{% endif %}{% endif %}
-    {% if page_number != 1 %}{% trans "Page" %} {{ page_number }}{% endif %}
 {% else %}
 {{ block.super }}
 {% endif %}
+{% if page_number != 1 %}{% trans "Page" %} {{ page_number }}{% endif %}
 {% endmetablock %}{% endblock %}
 
 {% block extra_css %}
