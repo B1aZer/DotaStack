@@ -13,7 +13,7 @@
 {% endfor %}
 {% endmetablock %}{% endblock %}
 
-{% block meta_description %}{% metablock %}
+{% block meta_description %}{% get_page_num blog_posts 'as' 'page_number' %}{% metablock %}
 {% if page.description %}
     {{ page.description }}
 {% elif tag or category or year or month or author %}
@@ -31,7 +31,7 @@
 {% else %}
 {{ block.super }}
 {% endif %}
-{% if page_number != 1 %}{% trans "Page" %} {{ page_number }}{% endif %}
+{% if page_number != 1 %} {% trans "Page" %} {{ page_number }}{% endif %}
 {% endmetablock %}{% endblock %}
 
 {% block extra_css %}
