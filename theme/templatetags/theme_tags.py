@@ -49,3 +49,11 @@ def get_image(content):
         return ''
     image_source = urllib.quote_plus(parser.src)
     return image_source
+
+@register.simple_tag(takes_context=True)
+def get_page_num(context, page, as_var, variable):
+    number = getattr(page, 'number', '')
+    if variable:
+        context[variable] = number
+        return ''
+    return number

@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags theme_tags staticfiles %}
 
-{% block meta_title %}{% if page %}{{ page.meta_title }} {% elif tag %} {% trans "Viewing posts tagged" %} {{ tag }} {% elif author %} {% trans "Viewing posts by" %} {{ author.get_full_name|default:author.username }} {% elif category %} {% trans category.title %} {% else %} {% trans "Home" %}{% endif %}{% endblock %}
+
+
+{% block meta_title %}{% get_page_num blog_posts 'as' 'page_number' %}{% if page %}{{ page.meta_title }} {% elif tag %} {% trans "Viewing posts tagged" %} {{ tag }} {% elif author %} {% trans "Viewing posts by" %} {{ author.get_full_name|default:author.username }} {% elif category %} {% trans category.title %} {% else %} {% trans "Home" %}{% endif %}{% if page_number != 1 %} {% trans "Page" %} {{ page_number }}{% endif %}{% endblock %}
 
 {% block meta_keywords %}{% metablock %}
 {% keywords_for page as keywords %}
@@ -191,6 +193,8 @@ $(document).ready(function() {
 </div>
 {% endblock %}
 {% endfor %}
+
+
 
 {% pagination_for blog_posts %}
 
