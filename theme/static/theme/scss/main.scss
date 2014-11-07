@@ -5,8 +5,8 @@ img {
 }
 
 body {
-    background: url(../images/bg.jpg) no-repeat center top fixed;
-    background-size: 100% 100%;
+    background: url(../images/bg2_mini.jpg) no-repeat center top fixed;
+    background-size: cover;
 }
 
 .wrapper {
@@ -86,4 +86,8 @@ body {
 .adsense-header {
     text-align: center;
     margin-bottom: 5px;
+}
+
+.adsense-footer {
+    text-align: center;
 }
