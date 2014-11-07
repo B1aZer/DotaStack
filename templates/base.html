@@ -164,15 +164,19 @@
         {% include "includes/user_panel.html" %}
         {% endnevercache %}
         <div class="adsense-right">
+            <style>
+                .right-responsive { width: 262px; height: 50px; }
+                @media(min-width: 500px) { .right-responsive { width: 382px; height: 60px; } }
+                @media(min-width: 800px) { .right-responsive { width: 562px; height: 90px; } }
+            </style>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- right responsive -->
-            <ins class="adsbygoogle"
-                style="display:block"
+            <ins class="adsbygoogle right-responsive"
+                style="display:inline-block"
                 data-ad-client="ca-pub-3051779384376799"
-                data-ad-slot="1839985862"
-                data-ad-format="auto"></ins>
+                data-ad-slot="1839985862"></ins>
             <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
         <div class="panel panel-default">
@@ -195,7 +199,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <div class="adsense-header">
+        <div class="adsense-footer">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- footer -->
             <ins class="adsbygoogle"
