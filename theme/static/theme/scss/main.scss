@@ -1,6 +1,6 @@
 @import "compass";
 @import "variables";
-img {
+iframe, img {
     max-width: 100%;
 }
 
@@ -99,3 +99,8 @@ body {
     margin-top: 20px;
     width: 100%;
 }
+
+.bottom-links {
+    margin-left: 50px;
+}
+
