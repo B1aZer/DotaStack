@@ -11,6 +11,9 @@ msgstr "DotaFarm: Развлекательный портал посвященн
 msgid "News"
 msgstr "Новости"
 
+msgid "Guides"
+msgstr "Гайды"
+
 msgid "Items"
 msgstr "Предметы"
 
