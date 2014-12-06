@@ -57,3 +57,18 @@ msgstr "Тактика"
 # Tags
 msgid "Wallpaper"
 msgstr "Обои"
+
+msgid "Sexy"
+msgstr "Эро"
+
+msgid "Cosplay"
+msgstr "Косплей"
+
+msgid "Art"
+msgstr "Арты"
+
+msgid "Guide"
+msgstr "Гайды"
+
+msgid "Patch"
+msgstr "Патч"
