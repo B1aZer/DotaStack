@@ -53,3 +53,7 @@ msgstr "Другие Майки"
 #: Blog categories
 msgid "Tactics"
 msgstr "Тактика"
+
+# Tags
+msgid "Wallpaper"
+msgstr "Обои"

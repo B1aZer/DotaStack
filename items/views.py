@@ -5,8 +5,6 @@ import os
 def main(request):
     return render(request, 'items/main.html')
 
-
-
 def items(request):
     module_dir = os.path.dirname(__file__)
     file_path = os.path.join(module_dir, 'items.json')
