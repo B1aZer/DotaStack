@@ -93,7 +93,7 @@
 {% if tag.item_count > 1 %}
 <li>
     <a href="{% url "blog_post_list_tag" tag.slug %}"
-        class="tag-weight-{{ tag.weight }} tag-cloud-item label label-warning">{% trans tag %}</a>
+        class="tag-weight-{{ tag.weight }} tag-cloud-item label label-warning">{% trans tag.title %}</a>
 </li>
 {% endif %}
 {% endfor %}
